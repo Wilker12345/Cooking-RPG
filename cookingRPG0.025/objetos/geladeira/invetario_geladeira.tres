@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="geladeira_inventario" load_steps=4 format=3 uid="uid://dmwbuu8lhvbfu"]
+
+[ext_resource type="Resource" uid="uid://o8p1a2eb7dmu" path="res://objetos/geladeira/itens_geladeira/bife.tres" id="1_ndd2w"]
+[ext_resource type="Resource" uid="uid://d3gbcimudoduy" path="res://objetos/geladeira/itens_geladeira/peixe.tres" id="2_rcki7"]
+[ext_resource type="Script" path="res://objetos/geladeira/geladeira_inventario.gd" id="3_bkntf"]
+
+[resource]
+script = ExtResource("3_bkntf")
+itens = Array[Resource("res://inventoryItem.gd")]([ExtResource("1_ndd2w"), null, ExtResource("2_rcki7"), null, null, null, null, null, null])
