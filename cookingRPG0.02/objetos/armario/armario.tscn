@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://nj8p2hkxghov"]
+
+[ext_resource type="Script" path="res://objetos/armario/armarioInteractionArea.gd" id="1_w7hkv"]
+[ext_resource type="PackedScene" uid="uid://ctj1ddo75803n" path="res://objetos/armario/armario_imagem.tscn" id="2_6em78"]
+[ext_resource type="Texture2D" uid="uid://45exb3bs4jmd" path="res://icon.svg" id="2_genix"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kuqyd"]
+radius = 78.0064
+
+[node name="Armario" type="Node2D"]
+z_index = 11
+
+[node name="InteractionAreaArmario" type="Area2D" parent="."]
+monitoring = false
+script = ExtResource("1_w7hkv")
+scene_to_load = ExtResource("2_6em78")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionAreaArmario"]
+shape = SubResource("CircleShape2D_kuqyd")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_genix")

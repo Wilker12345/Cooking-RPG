@@ -1,0 +1,128 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7sw5ktd8boe"]
+
+[ext_resource type="PackedScene" uid="uid://ryq26g4dl67g" path="res://personagens/player/inventario_player/player_inv_slot.tscn" id="1_n2dyw"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_42804"]
+
+[node name="player_inv_ui" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+self_modulate = Color(0, 0.305882, 0.305882, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("CanvasTexture_42804")
+
+[node name="GridContainer" type="GridContainer" parent="NinePatchRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -168.0
+offset_top = -100.0
+offset_right = 168.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 5
+
+[node name="player_inv_slot" parent="NinePatchRect/GridContainer" instance=ExtResource("1_n2dyw")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+
+[node name="player_inv_slot2" parent="NinePatchRect/GridContainer" instance=ExtResource("1_n2dyw")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+
+[node name="player_inv_slot3" parent="NinePatchRect/GridContainer" instance=ExtResource("1_n2dyw")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+
+[node name="player_inv_slot4" parent="NinePatchRect/GridContainer" instance=ExtResource("1_n2dyw")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+
+[node name="player_inv_slot5" parent="NinePatchRect/GridContainer" instance=ExtResource("1_n2dyw")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+
+[node name="player_inv_slot6" parent="NinePatchRect/GridContainer" instance=ExtResource("1_n2dyw")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+
+[node name="player_inv_slot7" parent="NinePatchRect/GridContainer" instance=ExtResource("1_n2dyw")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+
+[node name="player_inv_slot8" parent="NinePatchRect/GridContainer" instance=ExtResource("1_n2dyw")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+
+[node name="player_inv_slot9" parent="NinePatchRect/GridContainer" instance=ExtResource("1_n2dyw")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+
+[node name="player_inv_slot10" parent="NinePatchRect/GridContainer" instance=ExtResource("1_n2dyw")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+
+[node name="player_inv_slot11" parent="NinePatchRect/GridContainer" instance=ExtResource("1_n2dyw")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+
+[node name="player_inv_slot12" parent="NinePatchRect/GridContainer" instance=ExtResource("1_n2dyw")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+
+[node name="player_inv_slot13" parent="NinePatchRect/GridContainer" instance=ExtResource("1_n2dyw")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+
+[node name="player_inv_slot14" parent="NinePatchRect/GridContainer" instance=ExtResource("1_n2dyw")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+
+[node name="player_inv_slot15" parent="NinePatchRect/GridContainer" instance=ExtResource("1_n2dyw")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8

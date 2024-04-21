@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://ctj1ddo75803n"]
+
+[ext_resource type="Script" path="res://objetos/armario/armario_imagem.gd" id="1_m5sta"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_wew52"]
+specular_color = Color(0.74902, 0.447059, 0.301961, 1)
+
+[node name="Armario_imagem" type="Node2D"]
+script = ExtResource("1_m5sta")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 227.0
+offset_bottom = 102.0
+texture = SubResource("CanvasTexture_wew52")
