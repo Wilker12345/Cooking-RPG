@@ -1,0 +1,141 @@
+[gd_scene load_steps=8 format=3 uid="uid://b5dsiwv3lh0v3"]
+
+[ext_resource type="PackedScene" uid="uid://ctn1w2m1ax4yw" path="res://objetos/geladeira/geladeira_slot.tscn" id="1_bhsef"]
+[ext_resource type="PackedScene" uid="uid://drq13q3y5yurd" path="res://bag/itens_inventario/inventory_item.tscn" id="2_bh8x5"]
+[ext_resource type="Texture2D" uid="uid://7wfu8ctou0lf" path="res://artes/icones/Food/Beaf.png" id="3_erg27"]
+[ext_resource type="Texture2D" uid="uid://rsm2qtvg4jpp" path="res://artes/icones/Food/Honey.png" id="4_n1fsm"]
+[ext_resource type="Texture2D" uid="uid://bpxvsc4vl2rr" path="res://artes/icones/Food/Shrimp.png" id="5_xt5rs"]
+[ext_resource type="Texture2D" uid="uid://c8negn123fgda" path="res://artes/icones/Food/TeaLeaf.png" id="6_3cjwl"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_qcrro"]
+
+[node name="geladeira_ui" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_right = 320.0
+offset_bottom = 320.0
+texture = SubResource("CanvasTexture_qcrro")
+
+[node name="GridContainer" type="GridContainer" parent="NinePatchRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -100.0
+offset_right = 100.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 26
+theme_override_constants/v_separation = 35
+columns = 3
+
+[node name="geladeira_slot1" parent="NinePatchRect/GridContainer" instance=ExtResource("1_bhsef")]
+layout_mode = 2
+
+[node name="Button1" type="Button" parent="NinePatchRect/GridContainer/geladeira_slot1"]
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 65.0
+
+[node name="inventory_item" parent="NinePatchRect/GridContainer/geladeira_slot1" instance=ExtResource("2_bh8x5")]
+position = Vector2(34, 35)
+item_type = "ingrediente"
+item_name = "bife"
+item_texture = ExtResource("3_erg27")
+item_effect = "vazio"
+
+[node name="geladeira_slot2" parent="NinePatchRect/GridContainer" instance=ExtResource("1_bhsef")]
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="NinePatchRect/GridContainer/geladeira_slot2"]
+layout_mode = 0
+offset_right = 65.0
+offset_bottom = 65.0
+
+[node name="geladeira_slot3" parent="NinePatchRect/GridContainer" instance=ExtResource("1_bhsef")]
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="NinePatchRect/GridContainer/geladeira_slot3"]
+layout_mode = 0
+offset_right = 65.0
+offset_bottom = 65.0
+
+[node name="inventory_item" parent="NinePatchRect/GridContainer/geladeira_slot3" instance=ExtResource("2_bh8x5")]
+position = Vector2(34, 35)
+item_type = "ingrediente"
+item_name = "mel"
+item_texture = ExtResource("4_n1fsm")
+item_effect = "vazio"
+
+[node name="geladeira_slot4" parent="NinePatchRect/GridContainer" instance=ExtResource("1_bhsef")]
+layout_mode = 2
+
+[node name="Button4" type="Button" parent="NinePatchRect/GridContainer/geladeira_slot4"]
+layout_mode = 0
+offset_right = 65.0
+offset_bottom = 65.0
+
+[node name="geladeira_slot5" parent="NinePatchRect/GridContainer" instance=ExtResource("1_bhsef")]
+layout_mode = 2
+
+[node name="Button5" type="Button" parent="NinePatchRect/GridContainer/geladeira_slot5"]
+layout_mode = 0
+offset_right = 65.0
+offset_bottom = 65.0
+
+[node name="inventory_item" parent="NinePatchRect/GridContainer/geladeira_slot5" instance=ExtResource("2_bh8x5")]
+position = Vector2(34, 35)
+item_type = "ingrediente"
+item_name = "camarao"
+item_texture = ExtResource("5_xt5rs")
+item_effect = "vazio"
+
+[node name="geladeira_slot6" parent="NinePatchRect/GridContainer" instance=ExtResource("1_bhsef")]
+layout_mode = 2
+
+[node name="Button6" type="Button" parent="NinePatchRect/GridContainer/geladeira_slot6"]
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 65.0
+
+[node name="geladeira_slot7" parent="NinePatchRect/GridContainer" instance=ExtResource("1_bhsef")]
+layout_mode = 2
+
+[node name="Button7" type="Button" parent="NinePatchRect/GridContainer/geladeira_slot7"]
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 64.0
+
+[node name="geladeira_slot8" parent="NinePatchRect/GridContainer" instance=ExtResource("1_bhsef")]
+layout_mode = 2
+
+[node name="Button8" type="Button" parent="NinePatchRect/GridContainer/geladeira_slot8"]
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 65.0
+
+[node name="geladeira_slot9" parent="NinePatchRect/GridContainer" instance=ExtResource("1_bhsef")]
+layout_mode = 2
+
+[node name="Button9" type="Button" parent="NinePatchRect/GridContainer/geladeira_slot9"]
+layout_mode = 0
+offset_right = 64.0
+offset_bottom = 64.0
+
+[node name="inventory_item" parent="NinePatchRect/GridContainer/geladeira_slot9" instance=ExtResource("2_bh8x5")]
+position = Vector2(34, 35)
+item_type = "ingrediente"
+item_name = "folha de cha"
+item_texture = ExtResource("6_3cjwl")
+item_effect = "vazio"

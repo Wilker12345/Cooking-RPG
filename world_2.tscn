@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://cixplxnr0lemw"]
+
+[ext_resource type="PackedScene" uid="uid://6378ygioqqnq" path="res://personagens/player.tscn" id="2_t1ywn"]
+[ext_resource type="PackedScene" uid="uid://nj8p2hkxghov" path="res://objetos/armario/armario.tscn" id="2_veu3m"]
+[ext_resource type="PackedScene" uid="uid://drq13q3y5yurd" path="res://bag/itens_inventario/inventory_item.tscn" id="4_rpkbx"]
+[ext_resource type="Texture2D" uid="uid://7wfu8ctou0lf" path="res://artes/icones/Food/Beaf.png" id="5_lynvp"]
+
+[node name="World2" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 2
+
+[node name="Armario" parent="TileMap" instance=ExtResource("2_veu3m")]
+position = Vector2(282, 88)
+
+[node name="Player" parent="TileMap" instance=ExtResource("2_t1ywn")]
+
+[node name="inventory_item" parent="TileMap" instance=ExtResource("4_rpkbx")]
+position = Vector2(37, 107)
+item_type = "comida"
+item_name = "bife"
+item_texture = ExtResource("5_lynvp")
+item_effect = "efeito"
