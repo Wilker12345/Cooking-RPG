@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://crtmg32yqycno"]
+
+[ext_resource type="Script" path="res://bag/inventory_ui.gd" id="1_0sd5a"]
+
+[node name="inventory_ui" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_0sd5a")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 1
+offset_left = 40.0
+offset_top = 104.0
+offset_right = 682.0
+offset_bottom = 456.0
+theme_override_constants/h_separation = 20
+theme_override_constants/v_separation = 20
+columns = 4
