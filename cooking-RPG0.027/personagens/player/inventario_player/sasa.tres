@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="inventoryItem" load_steps=3 format=3 uid="uid://ej42mujx23rl"]
+
+[ext_resource type="Script" path="res://inventoryItem.gd" id="1_3me6u"]
+[ext_resource type="Texture2D" uid="uid://d0o2ao20m73c2" path="res://artes/icones/Food/Yakitori.png" id="2_dyxrg"]
+
+[resource]
+script = ExtResource("1_3me6u")
+nome = "sasa"
+texture = ExtResource("2_dyxrg")

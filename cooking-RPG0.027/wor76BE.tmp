@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1si0rgqiirlw"]
+
+[ext_resource type="PackedScene" uid="uid://6378ygioqqnq" path="res://personagens/player.tscn" id="1_64pbu"]
+[ext_resource type="PackedScene" uid="uid://qdunm7vu8b5h" path="res://objetos/geladeira/geladeira.tscn" id="2_bexqg"]
+
+[node name="world3" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 2
+
+[node name="Player" parent="TileMap" instance=ExtResource("1_64pbu")]
+
+[node name="geladeira" parent="TileMap" instance=ExtResource("2_bexqg")]

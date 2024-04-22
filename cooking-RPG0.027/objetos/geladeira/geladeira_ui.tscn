@@ -1,0 +1,77 @@
+[gd_scene load_steps=4 format=3 uid="uid://b5dsiwv3lh0v3"]
+
+[ext_resource type="PackedScene" uid="uid://ctn1w2m1ax4yw" path="res://objetos/geladeira/geladeira_slot.tscn" id="1_bhsef"]
+[ext_resource type="Script" path="res://objetos/geladeira/geladeira_ui.gd" id="1_qs3ey"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_qcrro"]
+
+[node name="geladeira_ui" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qs3ey")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+self_modulate = Color(0.631373, 0.631373, 0.631373, 1)
+z_index = 1
+y_sort_enabled = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -364.0
+offset_top = -242.0
+offset_right = 359.0
+offset_bottom = 266.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("CanvasTexture_qcrro")
+
+[node name="GridContainer" type="GridContainer" parent="NinePatchRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -100.0
+offset_right = 100.0
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = 36
+theme_override_constants/v_separation = 90
+columns = 3
+
+[node name="geladeira_slot1" parent="NinePatchRect/GridContainer" instance=ExtResource("1_bhsef")]
+layout_mode = 2
+
+[node name="geladeira_slot2" parent="NinePatchRect/GridContainer" instance=ExtResource("1_bhsef")]
+layout_mode = 2
+
+[node name="geladeira_slot3" parent="NinePatchRect/GridContainer" instance=ExtResource("1_bhsef")]
+layout_mode = 2
+
+[node name="geladeira_slot4" parent="NinePatchRect/GridContainer" instance=ExtResource("1_bhsef")]
+layout_mode = 2
+
+[node name="geladeira_slot5" parent="NinePatchRect/GridContainer" instance=ExtResource("1_bhsef")]
+layout_mode = 2
+
+[node name="geladeira_slot6" parent="NinePatchRect/GridContainer" instance=ExtResource("1_bhsef")]
+layout_mode = 2
+
+[node name="geladeira_slot7" parent="NinePatchRect/GridContainer" instance=ExtResource("1_bhsef")]
+layout_mode = 2
+
+[node name="geladeira_slot8" parent="NinePatchRect/GridContainer" instance=ExtResource("1_bhsef")]
+layout_mode = 2
+
+[node name="geladeira_slot9" parent="NinePatchRect/GridContainer" instance=ExtResource("1_bhsef")]
+layout_mode = 2

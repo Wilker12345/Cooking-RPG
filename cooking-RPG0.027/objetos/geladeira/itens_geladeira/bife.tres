@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="inventoryItem" load_steps=3 format=3 uid="uid://o8p1a2eb7dmu"]
+
+[ext_resource type="Script" path="res://inventoryItem.gd" id="1_ljeyx"]
+[ext_resource type="Texture2D" uid="uid://7wfu8ctou0lf" path="res://artes/icones/Food/Beaf.png" id="2_h8gno"]
+
+[resource]
+script = ExtResource("1_ljeyx")
+nome = "bife"
+texture = ExtResource("2_h8gno")

@@ -1,0 +1,31 @@
+[gd_scene load_steps=7 format=3 uid="uid://qdunm7vu8b5h"]
+
+[ext_resource type="Texture2D" uid="uid://45exb3bs4jmd" path="res://icon.svg" id="1_7dr20"]
+[ext_resource type="Script" path="res://objetos/geladeira/geladeira.gd" id="1_sgt7m"]
+[ext_resource type="Script" path="res://objetos/geladeira/geladeiraInteractionArea.gd" id="2_c4eu8"]
+[ext_resource type="Resource" uid="uid://dmwbuu8lhvbfu" path="res://objetos/geladeira/invetario_geladeira.tres" id="2_ypa6x"]
+[ext_resource type="PackedScene" uid="uid://b5dsiwv3lh0v3" path="res://objetos/geladeira/geladeira_ui.tscn" id="3_hdhq8"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vq7dm"]
+radius = 82.6075
+
+[node name="geladeira" type="Node2D"]
+process_mode = 3
+script = ExtResource("1_sgt7m")
+geladeira_inventory = ExtResource("2_ypa6x")
+
+[node name="geladeiraInteractionArea" type="Area2D" parent="."]
+script = ExtResource("2_c4eu8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="geladeiraInteractionArea"]
+shape = SubResource("CircleShape2D_vq7dm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_7dr20")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="geladeira_ui" parent="CanvasLayer" instance=ExtResource("3_hdhq8")]
+visible = false
+
+[connection signal="botao_pressionado_ui" from="CanvasLayer/geladeira_ui" to="." method="_on_geladeira_ui_botao_pressionado_ui"]

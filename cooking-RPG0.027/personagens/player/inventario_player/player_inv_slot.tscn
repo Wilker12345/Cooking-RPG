@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://ryq26g4dl67g"]
+
+[ext_resource type="Script" path="res://personagens/player/inventario_player/player_inv_slot.gd" id="1_ai2fm"]
+
+[node name="player_inv_slot" type="Panel"]
+process_mode = 3
+self_modulate = Color(100, 0, 0, 1)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -656.0
+offset_bottom = -416.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ai2fm")
+
+[node name="background" type="Sprite2D" parent="."]
+
+[node name="item" type="Sprite2D" parent="."]
+
+[node name="use" type="Button" parent="."]
+layout_mode = 1
+offset_right = 64.0
+offset_bottom = 64.0
+
+[connection signal="pressed" from="use" to="." method="_on_use_pressed"]
